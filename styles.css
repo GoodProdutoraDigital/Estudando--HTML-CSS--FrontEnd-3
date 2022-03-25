@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root{
+    --corPrimaria: #202033;
+    --corSecundaria: #474770;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    max-width: 1200px;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    padding: 30px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tittle{
+    flex-direction: column;
+    line-height: 30px;
+}
+
+li{
+    display: inline-block;
+    margin: 15px;
+}
+
+h1{
+    font-weight: 200;
+}
+
+h2{
+    font-size: 35px;
+    line-height: 40px;
+}
+
+span{
+    color: rgb(132, 14, 231);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(132, 14, 231);
+    transition: background .3 all;
+}
+
+#acessar{
+    border: 2px solid rgb(132, 14, 231);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#acessar:hover{
+    background-color: rgb(132, 14, 231);
+    color: white;
+}
+
+img{
+    width: 355px;
+    margin-left: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 10px;
+}
+
+form [type="submit"]{
+    height: 60px;
+    width: 60%;
+    background-color: rgb(132, 14, 231);
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    border-radius: 20px;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 10px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 760px){
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    form{
+        margin: 0 auto;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+}
